@@ -231,7 +231,7 @@ function pivot(word){
 // Get the currently selected text, if any.
 // Shameless pinched from StackOverflow.
 function getSelectionText() {
-    var text = "";
+    var text = localStorage.spritz;
     if (typeof window.getSelection != "undefined") {
         var sel = window.getSelection();
         if (sel.rangeCount) {
@@ -262,8 +262,9 @@ function spritzifyURL(){
     getURL("https://api.diffbot.com/v2/article?url="+ encodeURIComponent(url) +"&token=" + diffbot_token, // +"&callback=?",
         function(data) {
 
-           // data = JSON.parse(data);
-           data = JSON.parse(localStorage.spritz);
+            console.log(data);
+            data = JSON.parse(data);
+            console.log(data);
 
             if(data.error){
                 document.getElementById("spritz_result").innerText = "Article extraction failed. Try selecting text instead.";

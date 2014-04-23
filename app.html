@@ -7,6 +7,14 @@
 
 		<!-- Load Boostrap CSS files -->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<!-- Page dependant JS -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				//document.getElementById("spritz_me").innerHTML = localStorage.spritz;
+				(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();
+			});
+		</script>
 	</head>
 
 	<body>
@@ -34,7 +42,8 @@
 			<br>
 			<br>
 			<center>
-				<a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary" role="button">Sprintz It!</a>
+				<!-- <button onclick="(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary">Sprintz It!</button> -->
+				<div class="alert alert-info">Your text is available above. If your text does not appear above, click <a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();">here</a>.</div>
 			</center>
 		</div>
 	</body>
