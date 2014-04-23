@@ -262,7 +262,8 @@ function spritzifyURL(){
     getURL("https://api.diffbot.com/v2/article?url="+ encodeURIComponent(url) +"&token=" + diffbot_token, // +"&callback=?",
         function(data) {
 
-            data = JSON.parse(data);
+           // data = JSON.parse(data);
+           data = JSON.parse(localStorage.spritz);
 
             if(data.error){
                 document.getElementById("spritz_result").innerText = "Article extraction failed. Try selecting text instead.";

@@ -7,13 +7,6 @@
 
 		<!-- Load Boostrap CSS files -->
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-		<!-- Page dependant JS -->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				document.getElementById("spritz_me").innerHTML = localStorage.spritz;
-			});
-		</script>
 	</head>
 
 	<body>
@@ -40,15 +33,9 @@
 			<br>
 			<br>
 			<br>
-			<div class="page-header">
-				<h1>Your text to Spritz <small>Is it correct?</small></h1>
-				<center>
-					<a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary" role="button">Sprintz It!</a>
-				</center>
-				<hr>
-				<div id="spritz_me">
-				</div>
-			</div>
+			<center>
+				<a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary" role="button">Sprintz It!</a>
+			</center>
 		</div>
 	</body>
 </html>
