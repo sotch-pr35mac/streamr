@@ -13,12 +13,16 @@
 
 		<!-- Page dependant JS -->
 		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#continue").hide();
+			});
 			function OCRImage (image) {
 				var canvas = document.createElement('canvas');
 				canvas.width = image.naturalWidth;
 				canvas.height = image.naturalHeight;
 				canvas.getContext('2d').drawImage(image, 0, 0);
 				return OCRAD(canvas);
+				$("#continue").show();
 			}
 
 			function OCRPath(url, callback){
@@ -62,7 +66,7 @@
 		<div class="container">
 			<h1>Upload Your Image: </h1><input type="file" onchange="OCRFile(this.files[0], function(text){ localStorage.spritz = text; });">
 			<br>
-			<a href="app.html" class="btn btn-primary pull-right">Continue &gt;&gt;</a>
+			<a href="app.html" id="continue" class="btn btn-primary pull-right">Continue &gt;&gt;</a>
 		</div>
 	</body>
 </html>
