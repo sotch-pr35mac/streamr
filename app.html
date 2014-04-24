@@ -12,7 +12,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				//document.getElementById("spritz_me").innerHTML = localStorage.spritz;
-				(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();
+				(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='js/spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();
 			});
 		</script>
 	</head>
@@ -47,7 +47,7 @@
 			<br>
 			<center>
 				<!-- <button onclick="(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary">Sprintz It!</button> -->
-				<div class="alert alert-info">Your text is available above. If your text does not appear above, click <a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();">here</a>.</div>
+				<div class="alert alert-info">Your text is available above. If your text does not appear above, click <a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='js/spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();">here</a>.</div>
 				<br>
 				<button class="btn" onclick="javascript:(window.location.href='index.html');">Go Home</button>
 			</center>
