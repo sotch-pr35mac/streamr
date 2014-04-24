@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>streamr</title>
+		<!-- Load Jquery and Bootstrap javascript -->
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+		<!-- Load the OCRAD javascript -->
+		<script src="ocrad.js"></script>
+
+		<!-- Load Boostrap CSS files -->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<!-- Page dependant JS -->
+		<script type="text/javascript">
+			function OCRImage (image) {
+				var canvas = document.createElement('canvas');
+				canvas.width = image.naturalWidth;
+				canvas.height = image.naturalHeight;
+				canvas.getContext('2d').drawImage(image, 0, 0);
+				return OCRAD(canvas);
+			}
+
+			function OCRPath(url, callback){
+				var image = new Image();
+				image.src = url;
+				image.onload = function() { callback(OCRImage(image)); }
+			}
+
+			function OCRFile(file, callback) {
+				var reader = new FileReader();
+				reader.onload = function() { OCRPath(reader.result, callback); }
+				reader.readAsDataURL(file);
+			}
+		</script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">streamr</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-main">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<h1>Upload Your Image: </h1><input type="file" onchange="OCRFile(this.files[0], function(text){ localStorage.spritz = text; });">
+			<br>
+			<a href="app.html" class="btn btn-primary pull-right">Continue &gt;&gt;</a>
+		</div>
+	</body>
+</html>
