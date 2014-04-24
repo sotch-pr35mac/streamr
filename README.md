@@ -4,8 +4,8 @@ streamr
 An easy and effective way to get reading done fast with [Spritz reading technology](http://www.spritzinc.com/) and [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition)
 
 Built by students for students using these great open open source projects:
--[Miserlou's OpenSpritz](https://github.com/Miserlou/OpenSpritz)
--[antimatter15's OCRAD.js](https://github.com/antimatter15/ocrad.js)
+- [Miserlou's OpenSpritz](https://github.com/Miserlou/OpenSpritz)
+- [antimatter15's OCRAD.js](https://github.com/antimatter15/ocrad.js)
 
 Disclaimer
 ==========
