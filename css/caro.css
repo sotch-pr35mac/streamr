@@ -9,6 +9,10 @@ body {
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+.row {
+  height: auto;
+}
+
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -37,11 +41,12 @@ body {
   font-size: 24pt;
 }
 .navbar-inverse .navbar-brand:hover {
-  color: #428bca;
+  color: #fff;
+  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom: 1px solid transparent;
 }
 .navbar-inverse {
   border-style: none;
-  border-color: #322223;
 }
 .navbar-header, .navbar-collapse {
   margin-top: 10px;
@@ -66,14 +71,16 @@ body {
   font-weight: bold;
   color: #fff; /* IE8 proofing */
   color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
 }
 
-.navbar > .active > a,
-.navbar > .active > a:hover,
-.navbar > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+.navbar li:hover {
+  border-bottom: 2px solid transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+
+.navbar li:active {
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(255,255,255);
 }
 
 
