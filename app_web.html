@@ -1,69 +1,121 @@
-<html>
-	<head>
-		<title>streamr</title>
-		<!-- Load Jquery and Bootstrap javascript -->
-		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-		<!-- Load Boostrap CSS files -->
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-		<!-- Page dependant JS -->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#continue").click(function() {
-					var text = $("#textarea").val();
-					localStorage.spritz = text;
-					window.location.href = "app.html";
-				});
+    <title>Features | Streamr</title>
+    <!-- Page dependent JS -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#continue").click(function() {
+				var text = $("#textarea").val();
+				localStorage.spritz = text;
+				window.location.href = "app.html";
 			});
-		</script>
-	</head>
+		});
+	</script>
 
-	<body>
-		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">streamr</a>
-				</div>
-				<div class="collapse navbar-collapse" id="navbar-main">
-					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-					</ul>
-					<ul class="pull-right nav navbar-nav">
-						<li class="active"><a href="app_web.html">Web</a></li>
-						<li><a href="app_image.html">Image</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div class="container">
-			<br>
-			<br>
-			<br>
-			<br>
-			<div class="alert alert-info">Copy and paste text into the field below.</div>
-		</div>
-		<hr>
-		<div class="container">
-			<br>
-			<textarea style="width: 100%; height: 40%;" id="textarea"></textarea>
-			<br>
-			<br>
-			<a href="#" class="btn btn-primary pull-right" id="continue" role="button">Continue &gt;&gt;</a>
-		</div>
-		<hr>
-		<div class="container">
-			<footer>
-				<p>Built with Love in Chicago by <a href="http://www.stosur.info/">Blume Studios</a></p>
-			</footer>
-		</div>
-	</body>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/caro.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">streamr</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Read<b class="caret"></b></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="app_web.html">Web</a></li>
+		            <li class="divider"></li>
+		            <li><a href="app_image.html">Image</a></li>
+		          </ul>
+		        </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container">
+
+      <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+          <center><h2 class="featurette-heading">Insert <span class="text-muted">Text</span></h2></center>
+        </div>
+        <br />
+        <div class="row">
+        	<div class="alert alert-info">
+        	Copy and paste text into the field below.
+        	</div>
+        </div>
+        <div class="row">
+        	<textarea class="form-control" rows="12"></textarea>
+        </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Made with Love in Chicago by <a href="http://www.stosur.info/">Blume Studios</a></p>
+      </footer>
+      </div>
+    </div><!-- /.container -->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+  </body>
 </html>
