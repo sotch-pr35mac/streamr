@@ -17,14 +17,14 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
         //Hide the go forward button
-				$("#goButton").hide();
+				$("#continue").hide();
 			});
 			function OCRImage (image) {
 				var canvas = document.createElement('canvas');
 				canvas.width = image.naturalWidth;
 				canvas.height = image.naturalHeight;
 				canvas.getContext('2d').drawImage(image, 0, 0);
-				$("#goButton").show();
+				$("#continue").show();
 				return OCRAD(canvas);
 			}
 
@@ -120,7 +120,7 @@
 			</div>
         </div>
         <div class="row">
-        	<a href="app.html" role="button" class="btn btn-primary btn-lg pull-right" id="goButton">Continue &gt;&gt;</a>
+        	<a href="app.html" role="button" class="btn btn-primary btn-lg pull-right" id="continue">Continue &gt;&gt;</a>
         </div>
       <hr class="featurette-divider">
 
