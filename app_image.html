@@ -13,16 +13,18 @@
     <!-- Page dependent JS -->
 	<!-- Page dependant JS -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("#continue").hide();
+        //Hide the go forward button
+				$("#goButton").hide();
 			});
 			function OCRImage (image) {
 				var canvas = document.createElement('canvas');
 				canvas.width = image.naturalWidth;
 				canvas.height = image.naturalHeight;
 				canvas.getContext('2d').drawImage(image, 0, 0);
-				$("#continue").show();
+				$("#goButton").show();
 				return OCRAD(canvas);
 			}
 
@@ -102,24 +104,23 @@
         <div class="row featurette">
           <center><h2 class="featurette-heading">Upload <span class="text-muted">Image</span></h2></center>
         </div>
-        <br />
-        <br />
+        <br>
+        <br>
         <div class="row">
         	<div class="col-lg-6">
         		<input type="file" onchange="OCRFile(this.files[0], function(text){ localStorage.spritz = text; });">
         	</div>
         	<div class="col-lg-6">
-	        	<div class="progress">
-				  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-				    <span class="sr-only">60% Complete</span>
-				  </div>
-				</div>
+            <!-- Why do we have the following code? -->
+	        	<!-- <div class="progress">
+				      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+				      <span class="sr-only">60% Complete</span> 
+				    </div>
+				  </div> -->
 			</div>
         </div>
-
-        <br />
         <div class="row">
-        	<button type="button" class="btn btn-info btn-lg btn-block">Read!</button>
+        	<a href="app.html" role="button" class="btn btn-primary btn-lg pull-right" id="goButton">Continue &gt;&gt;</a>
         </div>
       <hr class="featurette-divider">
 
@@ -132,20 +133,11 @@
       </footer>
       </div>
     </div><!-- /.container -->
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/ocrad.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
     <script src="js/bootstrap.file-input.js"></script>
-   	<script type="text/javascript">
-			$('input[type=file]').bootstrapFileInput();
-			$('.file-inputs').bootstrapFileInput();
-			
-	</script>
+    <script type="text/javascript">
+       $('.file-inputs').bootstrapFileInput();
+    </script>
   </body>
 </html>
