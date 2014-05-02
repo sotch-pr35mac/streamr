@@ -1,24 +1,25 @@
 <html>
-	<head>
-		<title>streamr</title>
-		<!-- Load Jquery and Bootstrap javascript -->
-		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>streamr</title>
+    <!-- Load Jquery and Bootstrap javascript -->
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Load Boostrap CSS files -->
-		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Load Boostrap CSS files -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="css/cover.css"
 
-		<!-- Page dependant JS -->
-		<script type="text/javascript">
-			$(document).ready(function() {
-				//document.getElementById("spritz_me").innerHTML = localStorage.spritz;
-				(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='js/spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();
-			});
-		</script>
-	</head>
+    <!-- Page dependant JS -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        //document.getElementById("spritz_me").innerHTML = localStorage.spritz;
+        (function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='js/spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();
+      });
+    </script>
+  </head>
 
-	<body>
+  <body>
     <div class="navbar-wrapper">
       <div class="container">
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -32,7 +33,7 @@
               </button>
               <a class="navbar-brand" href="index.html">Streamr</a>
             </div>
-			<div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li><a href="about.html">About</a></li>
                 <li><a href="features.html">Features</a></li>
@@ -48,22 +49,22 @@
         </div>
       </div>
     </div>
-		<div class="container">
-			<br>
-			<br>
-			<br>
-			<center>
-				<!-- <button onclick="(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary">Sprintz It!</button> -->
-				<div class="alert alert-info">Your text is available above. If your text does not appear above, click <a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='js/spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();">here</a>.</div>
-				<br>
-				<button class="btn" onclick="javascript:(window.location.href='index.html');">Go Home</button>
-			</center>
-		</div>
-		<hr>
-		<div class="container">
-			<footer>
-				<p>Built with Love in Chicago by <a href="http://www.stosur.info/">Blume Studios</a></p>
-			</footer>
-		</div>
-	</body>
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <center>
+        <!-- <button onclick="(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();" class="btn btn-primary">Sprintz It!</button> -->
+        <div class="alert alert-info">Your text is available above. If your text does not appear above, click <a href="javascript:(function(){ cb = function(){ create_spritz(); }; var script=document.createElement('SCRIPT');script.src='js/spritz.js?callback=cb'; script.onload=cb; document.body.appendChild(script);})();">here</a>.</div>
+        <br>
+        <button class="btn" onclick="javascript:(window.location.href='index.html');">Go Home</button>
+      </center>
+    </div>
+    <hr>
+    <div class="container">
+      <footer>
+        <p>Made with Love in Chicago by Preston Stosur, and Steven Hanna</p>
+      </footer>
+    </div>
+  </body>
 </html>
