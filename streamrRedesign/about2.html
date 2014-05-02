@@ -9,21 +9,10 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Read Web | Streamr</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Page dependent JS -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#continue").click(function() {
-				var text = $("#textarea").val();
-				localStorage.spritz = text;
-				window.location.href = "app.html";
-			});
-		});
-	</script>
+    <title>About | Streamr</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -51,18 +40,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Streamr</a>
+              <a class="navbar-brand" href="#">streamr</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="features.html">Features</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Read <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="app_image.html">Image</a></li>
-                    <li><a href="app_web.html">Plain Text</a></li>
-                  </ul>
+                <li><a href="#">Use</a></li>
               </ul>
             </div>
           </div>
@@ -72,6 +56,7 @@
     
 
 
+  
 
 
 
@@ -82,30 +67,42 @@
     <div class="container">
 
       <!-- START THE FEATURETTES -->
+      <section id="portfolio">
         <div class="row featurette">
-          <center><h2 class="featurette-heading">Insert <span class="text-muted">Text</span></h2></center>
+          <center><h2 class="featurette-heading">Ab<span class="text-muted">out</span></h2></center>
         </div>
-        <br />
-        <div class="row">
-        	<div class="alert alert-info">
-        	Copy and paste text into the field below.
-        	</div>
+      </section>
+        <div class="row featurette">
+          <div class="col-md-6">
+            <h2 class="featurette-heading">Preston <span class="text-muted">Stosur-Bassett</span></h2>
+            <p class="lead">Preston is a web developer born and raised in the Chicago land area. He has 5 years experience with web development and is a college freshman at Kalamazoo College in Kalamazoo, Michigan.</p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="featurette-heading">Steven <span class="text-muted">Hanna</span></h2>
+              <p class="lead">Steven is a web designer with an eye for clean, professional and modern design. He is a high school senior at Glenbard West High School in Glen Ellyn, Illinois.</p>
+            </div>
         </div>
-        <div class="row">
-        	<textarea class="form-control" rows="12"></textarea>
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading">Disc<span class="text-muted">laimer</span></h2>
+            <p class="lead">streamr is in no way finished and is a work in progress. It was built in an hour so it could help the developers study for a test they had the next day. Please note that this may not work on mobile devices as of yet.</p>
+          </div>
         </div>
-        <br />
-        <div class="row">
-        	<a href="app.html" role="button" id="continue" class="btn btn-primary btn-lg pull-right">Continue &gt;&gt;</a>
+        <div class="row featurette">
+          <div class="col-md-12">
+            <h2 class="featurette-heading">Goal - <span class="text-muted">Misson for Streamer</span></h2>
+            <p class="lead">The goal for streamr is to have a web app and Android app that allows for pdf files, images of text (pictures from textbooks) and plain text to be able to be read quickly and easily through Spritz.</p>
+          </div>
         </div>
-      <hr class="featurette-divider">
+
+  
 
       <!-- /END THE FEATURETTES -->
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Made with Love in Chicago by <a href="http://www.stosur.info/">Preston Stosur-Bassett</a> and <a href="about.html#steve">Steven Hanna</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
       </div>
     </div><!-- /.container -->
@@ -115,6 +112,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
   </body>
 </html>

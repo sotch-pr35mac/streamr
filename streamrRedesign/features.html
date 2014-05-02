@@ -9,18 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Read Web | Streamr</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Page dependent JS -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#continue").click(function() {
-				var text = $("#textarea").val();
-				localStorage.spritz = text;
-				window.location.href = "app.html";
-			});
-		});
-	</script>
+    <title>Features | Streamr</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,18 +40,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Streamr</a>
+              <a class="navbar-brand" href="#">streamr</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="features.html">Features</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Read <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="app_image.html">Image</a></li>
-                    <li><a href="app_web.html">Plain Text</a></li>
-                  </ul>
+                <li><a href="#">Use</a></li>
               </ul>
             </div>
           </div>
@@ -72,6 +57,7 @@
     
 
 
+  
 
 
 
@@ -82,22 +68,52 @@
     <div class="container">
 
       <!-- START THE FEATURETTES -->
+      <section id="portfolio">
         <div class="row featurette">
-          <center><h2 class="featurette-heading">Insert <span class="text-muted">Text</span></h2></center>
+          <center><h2 class="featurette-heading">Feat<span class="text-muted">ures</span></h2></center>
+          <div class="col-md-4">
         </div>
-        <br />
-        <div class="row">
-        	<div class="alert alert-info">
-        	Copy and paste text into the field below.
-        	</div>
+      </section>
+      <section id="about">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Increase your reading speed <span class="text-muted">and your comprehension.</span></h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi</p>
+          </div>
+          <div class="col-md-5">
+          </div>
         </div>
-        <div class="row">
-        	<textarea class="form-control" rows="12"></textarea>
+      </section>  
+
+      <hr class="featurette-divider">
+      <section id="services">
+        <div class="row featurette">
+          <div class="col-md-5">
+          </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Built for <span class="text-muted">students.</span></h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi</p>
+          </div>
         </div>
-        <br />
-        <div class="row">
-        	<a href="app.html" role="button" id="continue" class="btn btn-primary btn-lg pull-right">Continue &gt;&gt;</a>
+      </section>
+
+      <hr class="featurette-divider">
+      <section id="expertise"></section>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">streamr is built <span class="text-muted">by the community.</span></h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi</p>
         </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
@@ -105,7 +121,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>Made with Love in Chicago by <a href="http://www.stosur.info/">Preston Stosur-Bassett</a> and <a href="about.html#steve">Steven Hanna</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
       </div>
     </div><!-- /.container -->
@@ -115,6 +131,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
   </body>
 </html>
