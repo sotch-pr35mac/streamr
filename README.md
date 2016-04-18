@@ -1,4 +1,4 @@
-streamr
+Streamr Web
 =======
 
 An easy and effective way to get reading done fast with [Spritz reading technology](http://www.spritzinc.com/) and [OCR](https://en.wikipedia.org/wiki/Optical_character_recognition)
